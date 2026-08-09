@@ -1,8 +1,5 @@
-# Azure SDK and AI Services
-azure-identity                                # Azure authentication and credentials management
-azure-ai-projects==1.0.0b10                   # Azure AI project management (avoiding latest version{1.0.0b11} due to connection issues)
-azure-ai-inference[opentelemetry]             # Azure AI inference with OpenTelemetry support
-azure-ai-evaluation                           # Azure AI model evaluation tools
-azure-ai-contentsafety                        # Azure content safety services
-azure-search-documents                        # Azure AI Search integration
-openai                                        # OpenAI Python API library
+azure-identity==1.26.0b2          # Microsoft Entra ID (keyless) authentication
+azure-ai-projects==2.3.0          # New Foundry (v2): endpoint-based client, prompt agents, Responses API
+azure-search-documents==11.7.0b2  # Azure AI Search index management and queries
+openai==2.8.0                     # OpenAI-compatible client via project.get_openai_client()
+python-dotenv==1.2.2              # Load environment variables from .env

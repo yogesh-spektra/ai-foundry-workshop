@@ -1,10 +1,7 @@
-#additional required packages
-azure-ai-ml
-semantic-kernel[azure]==1.28.0
-autogen
-autogen-agentchat
-autogen-ext[openai]
-autogen-core
-nest_asyncio
-opentelemetry-instrumentation-openai-v2
-opentelemetry-instrumentation-langchain
+# ── Microsoft Agent Framework / Azure AI Agents (Exercise 6) ──
+# Stable agent SDK for Azure AI Foundry agent scenarios. This works with the
+# repo's azure-ai-projects==2.3.0 pin and does not require downgrading to the
+# older 1.0.0b12 package line used by legacy Semantic Kernel samples.
+azure-ai-agents==1.1.0
+aiohttp==3.12.15
+nest_asyncio==1.6.0               # Allow asyncio.run() inside Jupyter cells
