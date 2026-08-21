@@ -1,5 +1,29 @@
-azure-identity==1.26.0b2          # Microsoft Entra ID (keyless) authentication
-azure-ai-projects==2.3.0          # New Foundry (v2): endpoint-based client, prompt agents, Responses API
-azure-search-documents==11.7.0b2  # Azure AI Search index management and queries
-openai==2.8.0                     # OpenAI-compatible client via project.get_openai_client()
-python-dotenv==1.2.2              # Load environment variables from .env
+# Core Azure SDKs
+azure-identity==1.26.0b2                  # Microsoft Entra ID (keyless) authentication
+azure-ai-projects==2.3.0                  # New Foundry (v2) endpoint-based client
+azure-search-documents==11.7.0b2          # Azure AI Search integration
+openai==2.8.0                             # OpenAI-compatible client via project.get_openai_client()
+python-dotenv==1.2.2                      # Load environment variables from .env
+
+# Multi-agent frameworks (Exercise 6)
+# Microsoft Agent Framework / Azure AI Agents SDK for Exercise 6.
+# Keep azure-ai-projects pinned to 2.3.0 above; do not downgrade to the older 1.0.0b12 line.
+azure-ai-agents==1.1.0                    # Stable Azure AI Agents client library for Python
+aiohttp==3.12.15                          # Required for async agent client samples in notebooks
+nest_asyncio==1.6.0                       # Allow asyncio.run() inside Jupyter
+agent-framework-foundry
+agent-framework-orchestrations
+
+# Observability and tracing (Exercise 5)
+azure-monitor-opentelemetry==1.8.9
+azure-core-tracing-opentelemetry==1.0.0b13
+opentelemetry-instrumentation-openai-v2==2.4b0
+opentelemetry-exporter-otlp-proto-grpc==1.43.0
+
+# Notebook environment and utilities
+jupyter==1.1.1
+notebook==7.6.0
+ipykernel==7.3.0
+nbformat==5.10.4
+pandas==3.0.3
+tabulate==0.10.0
